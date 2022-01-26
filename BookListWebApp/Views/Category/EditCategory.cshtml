@@ -1,0 +1,33 @@
+﻿@model Category
+
+<form method="post" class="mw-50 w-50 mx-auto mt-5 shadow p-4" asp-action="EditCategory">
+    
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h4 class="mb-3">
+                Edit Category
+            </h4>
+        </div>
+        <div class="text-danger rounded-2" role="alert" asp-validation-summary="All"></div>
+        <div class="form-floating mb-3">
+            <input type="text" asp-for="Name" class="form-control" id="" placeholder="Name">
+            <label asp-for="Name"></label>
+            <span class="text-danger" asp-validation-for="Name"></span>
+        </div>
+        <div class="form-floating">
+            <input type="text" asp-for="DisplayOrder" class="form-control" id="" placeholder="Display order">
+            <label asp-for="DisplayOrder"></label>
+            <span class="text-danger" asp-validation-for="DisplayOrder"></span>
+        </div>
+    </div>
+    <div class="d-grid gap-2 d-md-block text-center mt-3">
+
+        <button type="submit" class="btn btn-success">Update</button>
+        <a type="button" asp-controller="Category" asp-action="Index" class="btn btn-danger">Back to list</a>
+    </div>
+</form>
+@section Scripts{
+    @{
+    <partial name="_ValidationScriptsPartial" />
+    }
+}

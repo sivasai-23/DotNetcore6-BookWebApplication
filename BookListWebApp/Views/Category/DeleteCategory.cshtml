@@ -1,0 +1,30 @@
+﻿@model Category
+
+<form method="post" class="mw-50 w-50 mx-auto mt-5 shadow p-4" asp-action="Delete">
+    <input  asp-for="Id" hidden />
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h4 class="mb-3">
+                Delete Category
+            </h4>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="text" disabled asp-for="Name" class="form-control" id="" placeholder="Name">
+            <label asp-for="Name"></label>
+        </div>
+        <div class="form-floating">
+            <input type="text" disabled asp-for="DisplayOrder" class="form-control" id="" placeholder="Display order">
+            <label asp-for="DisplayOrder"></label>
+        </div>
+    </div>
+    <div class="d-grid gap-2 d-md-block text-center mt-3">
+
+        <button type="submit" class="btn btn-success">Delete</button>
+        <a type="button" asp-controller="Category" asp-action="Index" class="btn btn-danger">Back to list</a>
+    </div>
+</form>
+@section Scripts{
+    @{
+    <partial name="_ValidationScriptsPartial" />
+    }
+}

@@ -1,0 +1,6 @@
+# DotNetcore6-BookWebApplication
+Hi Friends, I'm Siva Sai
+This is my DOT NET CORE6 BULKY BOOK WEB APPLICATION, I have used Dot net core6, EF Core code first approach application
+and Bootstrap 5 version with Dark black theme color
+I hope you will enjoy it
+Thanks. Happy coding...!!!🙂
